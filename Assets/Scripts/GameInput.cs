@@ -22,14 +22,7 @@ public class GameInput : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance != null)
-        {
-            Destroy(gameObject);
-        }
-
         Instance = this;
-
-        DontDestroyOnLoad(gameObject);
 
         m_PlayerControls = new PlayerControls();
     }
