@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8231452975596740461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 823457376598514765}
+  - component: {fileID: 8271685410609515551}
+  - component: {fileID: 4962055208949520560}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &823457376598514765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8231452975596740461}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8271685410609515551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8231452975596740461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1817780f7a0c6414a9dfa85995e5a786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4962055208949520560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8231452975596740461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a66121be4ad32344a97c5eac57a706ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Booster>k__BackingField:
+    Guid:
+      Data1: 1639689312
+      Data2: 1205053364
+      Data3: -51112822
+      Data4: -393299425
+    Path: event:/Ship SFX/Booster
+  <Thruster>k__BackingField:
+    Guid:
+      Data1: -1760606555
+      Data2: 1085037087
+      Data3: 2144781970
+      Data4: -1987117120
+    Path: event:/Ship SFX/Thruster
+  <ChargeUp>k__BackingField:
+    Guid:
+      Data1: 803113428
+      Data2: 1272799257
+      Data3: -1127468651
+      Data4: 633583460
+    Path: event:/Ship SFX/ChargeUp
+  <ChargeDown>k__BackingField:
+    Guid:
+      Data1: 1530324545
+      Data2: 1269853667
+      Data3: 112791463
+      Data4: -370219551
+    Path: event:/Ship SFX/ChargeDown
+  <HyperSpeed>k__BackingField:
+    Guid:
+      Data1: 1500336483
+      Data2: 1302053908
+      Data3: 721138350
+      Data4: 183755971
+    Path: event:/Ship SFX/HyperSpeed
+  <HyperSpeedPreparing>k__BackingField:
+    Guid:
+      Data1: 1167402124
+      Data2: 1199756882
+      Data3: 425366942
+      Data4: -2111153588
+    Path: event:/Ship SFX/HyperSpeedPreparing
+  <BurstThruster>k__BackingField:
+    Guid:
+      Data1: 1357818215
+      Data2: 1118561801
+      Data3: -1585257812
+      Data4: -880502006
+    Path: event:/Ship SFX/BurstThruster
+  <BallHit>k__BackingField:
+    Guid:
+      Data1: -106956318
+      Data2: 1231645566
+      Data3: -2131153231
+      Data4: -1821297460
+    Path: event:/Ball SFX/BallHit
+  <CameraModeToggle>k__BackingField:
+    Guid:
+      Data1: 491927947
+      Data2: 1144720215
+      Data3: 1058393774
+      Data4: 1739806655
+    Path: event:/UI SFX/CameraModeToggle
+  <CheckpointComplete>k__BackingField:
+    Guid:
+      Data1: 1075388076
+      Data2: 1074572521
+      Data3: -299330404
+      Data4: -1739296985
+    Path: event:/UI SFX/CheckpointComplete
+  <SpaceAmbience>k__BackingField:
+    Guid:
+      Data1: -2046519384
+      Data2: 1079817495
+      Data3: 798792872
+      Data4: 1004829752
+    Path: event:/Ambience/Space Ambience
