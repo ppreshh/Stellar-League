@@ -5,6 +5,9 @@
 
 #### I'm hoping for folks to use this as a playground to experiment with their own ideas. I've always thought bringing Rocket League aerial mechanics out of the context of Rocket League would be interesting to tackle. Let's see what happens!
 
+#### Youtube Walkthrough
+https://youtu.be/foW7VQnHi7Q?si=CsOQi1Nt8Wp0xmvf
+
 ## Documentation
 Unity 2022.3.10f1
 
