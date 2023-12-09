@@ -28,7 +28,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             ""id"": ""57daa782-9967-48ed-b10e-e3a5b823ebe2"",
             ""actions"": [
                 {
-                    ""name"": ""LeftJoystick"",
+                    ""name"": ""Movement"",
                     ""type"": ""Value"",
                     ""id"": ""9b3d98bb-f513-4242-aa94-6f024e484fda"",
                     ""expectedControlType"": ""Vector2"",
@@ -37,7 +37,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""LeftShoulder"",
+                    ""name"": ""AirRollToggle"",
                     ""type"": ""Value"",
                     ""id"": ""5c87bfe5-fc58-492a-8cab-3250d4173e02"",
                     ""expectedControlType"": """",
@@ -46,7 +46,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""RighTrigger"",
+                    ""name"": ""Booster"",
                     ""type"": ""Value"",
                     ""id"": ""0042d3a2-224b-412c-a643-892bc30fbc97"",
                     ""expectedControlType"": ""Button"",
@@ -55,7 +55,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""LeftTrigger"",
+                    ""name"": ""Reverse"",
                     ""type"": ""Button"",
                     ""id"": ""d182d8fa-d960-4a6f-897e-d5ca81398cef"",
                     ""expectedControlType"": ""Button"",
@@ -64,7 +64,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""EastButton"",
+                    ""name"": ""Hyperspeed"",
                     ""type"": ""Button"",
                     ""id"": ""e87efe15-cde5-42cd-a111-d6f9afb66bec"",
                     ""expectedControlType"": ""Button"",
@@ -73,7 +73,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""SouthButton"",
+                    ""name"": ""Burst"",
                     ""type"": ""Button"",
                     ""id"": ""24fe9ec1-54f4-4997-afbf-724c20fb772c"",
                     ""expectedControlType"": ""Button"",
@@ -91,7 +91,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""NorthButton"",
+                    ""name"": ""CameraModeToggle"",
                     ""type"": ""Button"",
                     ""id"": ""62b1c315-927b-4f6b-9117-49ce58a014b9"",
                     ""expectedControlType"": ""Button"",
@@ -100,7 +100,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""RightStickPress"",
+                    ""name"": ""CameraYOffsetToggle"",
                     ""type"": ""Button"",
                     ""id"": ""2f674af5-cc56-4bf9-a370-48a5af081dd5"",
                     ""expectedControlType"": ""Button"",
@@ -117,7 +117,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""LeftJoystick"",
+                    ""action"": ""Movement"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -128,7 +128,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""LeftJoystick"",
+                    ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -139,7 +139,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""LeftJoystick"",
+                    ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -150,7 +150,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""LeftJoystick"",
+                    ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -161,7 +161,62 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""LeftJoystick"",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""5c942733-04be-4926-b732-559a1e82d52f"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""af75637b-ac59-43d5-aed6-67d7f487be9b"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""aac75647-621e-45cf-a760-bad8062ea048"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""04f324da-164c-4407-9710-0378d39e5546"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""1534dffd-f036-4eee-b9e3-b9cdfa1fb7ff"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -172,7 +227,18 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""LeftShoulder"",
+                    ""action"": ""AirRollToggle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""05364567-7f25-4ada-81fc-c0aed2fe4cec"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""AirRollToggle"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -183,7 +249,18 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""RighTrigger"",
+                    ""action"": ""Booster"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6dc4f1ef-71a8-484e-aeb4-7193cc682ccd"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Booster"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -194,7 +271,18 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""LeftTrigger"",
+                    ""action"": ""Reverse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3eeeb584-70fa-46b7-aa6b-f56f5450f8c6"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Reverse"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -205,7 +293,18 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""EastButton"",
+                    ""action"": ""Hyperspeed"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6bb4d304-1ed6-466e-8e13-25761d9a913c"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Hyperspeed"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -216,7 +315,18 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""SouthButton"",
+                    ""action"": ""Burst"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b7a47cd4-c18d-4687-8bd0-187d46758ad6"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Burst"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -282,7 +392,18 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""NorthButton"",
+                    ""action"": ""CameraModeToggle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""60bfb40f-76ee-40f0-9dd4-3350cbb8dd23"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraModeToggle"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -293,7 +414,18 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""RightStickPress"",
+                    ""action"": ""CameraYOffsetToggle"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2a779d65-a65e-4cc4-b849-c02dbbb39744"",
+                    ""path"": ""<Keyboard>/v"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CameraYOffsetToggle"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -304,15 +436,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
 }");
         // ActionMap
         m_ActionMap = asset.FindActionMap("ActionMap", throwIfNotFound: true);
-        m_ActionMap_LeftJoystick = m_ActionMap.FindAction("LeftJoystick", throwIfNotFound: true);
-        m_ActionMap_LeftShoulder = m_ActionMap.FindAction("LeftShoulder", throwIfNotFound: true);
-        m_ActionMap_RighTrigger = m_ActionMap.FindAction("RighTrigger", throwIfNotFound: true);
-        m_ActionMap_LeftTrigger = m_ActionMap.FindAction("LeftTrigger", throwIfNotFound: true);
-        m_ActionMap_EastButton = m_ActionMap.FindAction("EastButton", throwIfNotFound: true);
-        m_ActionMap_SouthButton = m_ActionMap.FindAction("SouthButton", throwIfNotFound: true);
+        m_ActionMap_Movement = m_ActionMap.FindAction("Movement", throwIfNotFound: true);
+        m_ActionMap_AirRollToggle = m_ActionMap.FindAction("AirRollToggle", throwIfNotFound: true);
+        m_ActionMap_Booster = m_ActionMap.FindAction("Booster", throwIfNotFound: true);
+        m_ActionMap_Reverse = m_ActionMap.FindAction("Reverse", throwIfNotFound: true);
+        m_ActionMap_Hyperspeed = m_ActionMap.FindAction("Hyperspeed", throwIfNotFound: true);
+        m_ActionMap_Burst = m_ActionMap.FindAction("Burst", throwIfNotFound: true);
         m_ActionMap_RightJoystick = m_ActionMap.FindAction("RightJoystick", throwIfNotFound: true);
-        m_ActionMap_NorthButton = m_ActionMap.FindAction("NorthButton", throwIfNotFound: true);
-        m_ActionMap_RightStickPress = m_ActionMap.FindAction("RightStickPress", throwIfNotFound: true);
+        m_ActionMap_CameraModeToggle = m_ActionMap.FindAction("CameraModeToggle", throwIfNotFound: true);
+        m_ActionMap_CameraYOffsetToggle = m_ActionMap.FindAction("CameraYOffsetToggle", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -374,28 +506,28 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     // ActionMap
     private readonly InputActionMap m_ActionMap;
     private List<IActionMapActions> m_ActionMapActionsCallbackInterfaces = new List<IActionMapActions>();
-    private readonly InputAction m_ActionMap_LeftJoystick;
-    private readonly InputAction m_ActionMap_LeftShoulder;
-    private readonly InputAction m_ActionMap_RighTrigger;
-    private readonly InputAction m_ActionMap_LeftTrigger;
-    private readonly InputAction m_ActionMap_EastButton;
-    private readonly InputAction m_ActionMap_SouthButton;
+    private readonly InputAction m_ActionMap_Movement;
+    private readonly InputAction m_ActionMap_AirRollToggle;
+    private readonly InputAction m_ActionMap_Booster;
+    private readonly InputAction m_ActionMap_Reverse;
+    private readonly InputAction m_ActionMap_Hyperspeed;
+    private readonly InputAction m_ActionMap_Burst;
     private readonly InputAction m_ActionMap_RightJoystick;
-    private readonly InputAction m_ActionMap_NorthButton;
-    private readonly InputAction m_ActionMap_RightStickPress;
+    private readonly InputAction m_ActionMap_CameraModeToggle;
+    private readonly InputAction m_ActionMap_CameraYOffsetToggle;
     public struct ActionMapActions
     {
         private @PlayerControls m_Wrapper;
         public ActionMapActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @LeftJoystick => m_Wrapper.m_ActionMap_LeftJoystick;
-        public InputAction @LeftShoulder => m_Wrapper.m_ActionMap_LeftShoulder;
-        public InputAction @RighTrigger => m_Wrapper.m_ActionMap_RighTrigger;
-        public InputAction @LeftTrigger => m_Wrapper.m_ActionMap_LeftTrigger;
-        public InputAction @EastButton => m_Wrapper.m_ActionMap_EastButton;
-        public InputAction @SouthButton => m_Wrapper.m_ActionMap_SouthButton;
+        public InputAction @Movement => m_Wrapper.m_ActionMap_Movement;
+        public InputAction @AirRollToggle => m_Wrapper.m_ActionMap_AirRollToggle;
+        public InputAction @Booster => m_Wrapper.m_ActionMap_Booster;
+        public InputAction @Reverse => m_Wrapper.m_ActionMap_Reverse;
+        public InputAction @Hyperspeed => m_Wrapper.m_ActionMap_Hyperspeed;
+        public InputAction @Burst => m_Wrapper.m_ActionMap_Burst;
         public InputAction @RightJoystick => m_Wrapper.m_ActionMap_RightJoystick;
-        public InputAction @NorthButton => m_Wrapper.m_ActionMap_NorthButton;
-        public InputAction @RightStickPress => m_Wrapper.m_ActionMap_RightStickPress;
+        public InputAction @CameraModeToggle => m_Wrapper.m_ActionMap_CameraModeToggle;
+        public InputAction @CameraYOffsetToggle => m_Wrapper.m_ActionMap_CameraYOffsetToggle;
         public InputActionMap Get() { return m_Wrapper.m_ActionMap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -405,64 +537,64 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         {
             if (instance == null || m_Wrapper.m_ActionMapActionsCallbackInterfaces.Contains(instance)) return;
             m_Wrapper.m_ActionMapActionsCallbackInterfaces.Add(instance);
-            @LeftJoystick.started += instance.OnLeftJoystick;
-            @LeftJoystick.performed += instance.OnLeftJoystick;
-            @LeftJoystick.canceled += instance.OnLeftJoystick;
-            @LeftShoulder.started += instance.OnLeftShoulder;
-            @LeftShoulder.performed += instance.OnLeftShoulder;
-            @LeftShoulder.canceled += instance.OnLeftShoulder;
-            @RighTrigger.started += instance.OnRighTrigger;
-            @RighTrigger.performed += instance.OnRighTrigger;
-            @RighTrigger.canceled += instance.OnRighTrigger;
-            @LeftTrigger.started += instance.OnLeftTrigger;
-            @LeftTrigger.performed += instance.OnLeftTrigger;
-            @LeftTrigger.canceled += instance.OnLeftTrigger;
-            @EastButton.started += instance.OnEastButton;
-            @EastButton.performed += instance.OnEastButton;
-            @EastButton.canceled += instance.OnEastButton;
-            @SouthButton.started += instance.OnSouthButton;
-            @SouthButton.performed += instance.OnSouthButton;
-            @SouthButton.canceled += instance.OnSouthButton;
+            @Movement.started += instance.OnMovement;
+            @Movement.performed += instance.OnMovement;
+            @Movement.canceled += instance.OnMovement;
+            @AirRollToggle.started += instance.OnAirRollToggle;
+            @AirRollToggle.performed += instance.OnAirRollToggle;
+            @AirRollToggle.canceled += instance.OnAirRollToggle;
+            @Booster.started += instance.OnBooster;
+            @Booster.performed += instance.OnBooster;
+            @Booster.canceled += instance.OnBooster;
+            @Reverse.started += instance.OnReverse;
+            @Reverse.performed += instance.OnReverse;
+            @Reverse.canceled += instance.OnReverse;
+            @Hyperspeed.started += instance.OnHyperspeed;
+            @Hyperspeed.performed += instance.OnHyperspeed;
+            @Hyperspeed.canceled += instance.OnHyperspeed;
+            @Burst.started += instance.OnBurst;
+            @Burst.performed += instance.OnBurst;
+            @Burst.canceled += instance.OnBurst;
             @RightJoystick.started += instance.OnRightJoystick;
             @RightJoystick.performed += instance.OnRightJoystick;
             @RightJoystick.canceled += instance.OnRightJoystick;
-            @NorthButton.started += instance.OnNorthButton;
-            @NorthButton.performed += instance.OnNorthButton;
-            @NorthButton.canceled += instance.OnNorthButton;
-            @RightStickPress.started += instance.OnRightStickPress;
-            @RightStickPress.performed += instance.OnRightStickPress;
-            @RightStickPress.canceled += instance.OnRightStickPress;
+            @CameraModeToggle.started += instance.OnCameraModeToggle;
+            @CameraModeToggle.performed += instance.OnCameraModeToggle;
+            @CameraModeToggle.canceled += instance.OnCameraModeToggle;
+            @CameraYOffsetToggle.started += instance.OnCameraYOffsetToggle;
+            @CameraYOffsetToggle.performed += instance.OnCameraYOffsetToggle;
+            @CameraYOffsetToggle.canceled += instance.OnCameraYOffsetToggle;
         }
 
         private void UnregisterCallbacks(IActionMapActions instance)
         {
-            @LeftJoystick.started -= instance.OnLeftJoystick;
-            @LeftJoystick.performed -= instance.OnLeftJoystick;
-            @LeftJoystick.canceled -= instance.OnLeftJoystick;
-            @LeftShoulder.started -= instance.OnLeftShoulder;
-            @LeftShoulder.performed -= instance.OnLeftShoulder;
-            @LeftShoulder.canceled -= instance.OnLeftShoulder;
-            @RighTrigger.started -= instance.OnRighTrigger;
-            @RighTrigger.performed -= instance.OnRighTrigger;
-            @RighTrigger.canceled -= instance.OnRighTrigger;
-            @LeftTrigger.started -= instance.OnLeftTrigger;
-            @LeftTrigger.performed -= instance.OnLeftTrigger;
-            @LeftTrigger.canceled -= instance.OnLeftTrigger;
-            @EastButton.started -= instance.OnEastButton;
-            @EastButton.performed -= instance.OnEastButton;
-            @EastButton.canceled -= instance.OnEastButton;
-            @SouthButton.started -= instance.OnSouthButton;
-            @SouthButton.performed -= instance.OnSouthButton;
-            @SouthButton.canceled -= instance.OnSouthButton;
+            @Movement.started -= instance.OnMovement;
+            @Movement.performed -= instance.OnMovement;
+            @Movement.canceled -= instance.OnMovement;
+            @AirRollToggle.started -= instance.OnAirRollToggle;
+            @AirRollToggle.performed -= instance.OnAirRollToggle;
+            @AirRollToggle.canceled -= instance.OnAirRollToggle;
+            @Booster.started -= instance.OnBooster;
+            @Booster.performed -= instance.OnBooster;
+            @Booster.canceled -= instance.OnBooster;
+            @Reverse.started -= instance.OnReverse;
+            @Reverse.performed -= instance.OnReverse;
+            @Reverse.canceled -= instance.OnReverse;
+            @Hyperspeed.started -= instance.OnHyperspeed;
+            @Hyperspeed.performed -= instance.OnHyperspeed;
+            @Hyperspeed.canceled -= instance.OnHyperspeed;
+            @Burst.started -= instance.OnBurst;
+            @Burst.performed -= instance.OnBurst;
+            @Burst.canceled -= instance.OnBurst;
             @RightJoystick.started -= instance.OnRightJoystick;
             @RightJoystick.performed -= instance.OnRightJoystick;
             @RightJoystick.canceled -= instance.OnRightJoystick;
-            @NorthButton.started -= instance.OnNorthButton;
-            @NorthButton.performed -= instance.OnNorthButton;
-            @NorthButton.canceled -= instance.OnNorthButton;
-            @RightStickPress.started -= instance.OnRightStickPress;
-            @RightStickPress.performed -= instance.OnRightStickPress;
-            @RightStickPress.canceled -= instance.OnRightStickPress;
+            @CameraModeToggle.started -= instance.OnCameraModeToggle;
+            @CameraModeToggle.performed -= instance.OnCameraModeToggle;
+            @CameraModeToggle.canceled -= instance.OnCameraModeToggle;
+            @CameraYOffsetToggle.started -= instance.OnCameraYOffsetToggle;
+            @CameraYOffsetToggle.performed -= instance.OnCameraYOffsetToggle;
+            @CameraYOffsetToggle.canceled -= instance.OnCameraYOffsetToggle;
         }
 
         public void RemoveCallbacks(IActionMapActions instance)
@@ -482,14 +614,14 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     public ActionMapActions @ActionMap => new ActionMapActions(this);
     public interface IActionMapActions
     {
-        void OnLeftJoystick(InputAction.CallbackContext context);
-        void OnLeftShoulder(InputAction.CallbackContext context);
-        void OnRighTrigger(InputAction.CallbackContext context);
-        void OnLeftTrigger(InputAction.CallbackContext context);
-        void OnEastButton(InputAction.CallbackContext context);
-        void OnSouthButton(InputAction.CallbackContext context);
+        void OnMovement(InputAction.CallbackContext context);
+        void OnAirRollToggle(InputAction.CallbackContext context);
+        void OnBooster(InputAction.CallbackContext context);
+        void OnReverse(InputAction.CallbackContext context);
+        void OnHyperspeed(InputAction.CallbackContext context);
+        void OnBurst(InputAction.CallbackContext context);
         void OnRightJoystick(InputAction.CallbackContext context);
-        void OnNorthButton(InputAction.CallbackContext context);
-        void OnRightStickPress(InputAction.CallbackContext context);
+        void OnCameraModeToggle(InputAction.CallbackContext context);
+        void OnCameraYOffsetToggle(InputAction.CallbackContext context);
     }
 }

@@ -7,11 +7,11 @@ public class GameInput : MonoBehaviour
 {
     private PlayerControls m_PlayerControls;
 
-    public Vector2 PitchYawValue { get { return m_PlayerControls.ActionMap.LeftJoystick.ReadValue<Vector2>(); } }
+    public Vector2 PitchYawValue { get { return m_PlayerControls.ActionMap.Movement.ReadValue<Vector2>(); } }
     public Vector2 CameraMoveValue { get { return m_PlayerControls.ActionMap.RightJoystick.ReadValue<Vector2>(); } }
-    public bool IsRolling { get { return m_PlayerControls.ActionMap.LeftShoulder.ReadValue<float>() == 1f; } }
-    public float BoosterValue { get { return m_PlayerControls.ActionMap.RighTrigger.ReadValue<float>(); } }
-    public float ReverseValue { get { return m_PlayerControls.ActionMap.LeftTrigger.ReadValue<float>(); } }
+    public bool IsRolling { get { return m_PlayerControls.ActionMap.AirRollToggle.ReadValue<float>() == 1f; } }
+    public float BoosterValue { get { return m_PlayerControls.ActionMap.Booster.ReadValue<float>(); } }
+    public float ReverseValue { get { return m_PlayerControls.ActionMap.Reverse.ReadValue<float>(); } }
 
     public event Action OnHyperSpeedPerformed;
     public event Action OnBurstPerformed;
@@ -34,10 +34,10 @@ public class GameInput : MonoBehaviour
 
     private void Start()
     {
-        m_PlayerControls.ActionMap.EastButton.performed += EastButton_performed;
-        m_PlayerControls.ActionMap.SouthButton.performed += SouthButton_performed;
-        m_PlayerControls.ActionMap.NorthButton.performed += NorthButton_performed;
-        m_PlayerControls.ActionMap.RightStickPress.performed += RightStickPress_performed;
+        m_PlayerControls.ActionMap.Hyperspeed.performed += Hyperspeed_performed;
+        m_PlayerControls.ActionMap.Burst.performed += Burst_performed;
+        m_PlayerControls.ActionMap.CameraModeToggle.performed += CameraModeToggle_performed;
+        m_PlayerControls.ActionMap.CameraYOffsetToggle.performed += CameraYOffsetToggle_performed;
     }    
 
     private void OnDisable()
@@ -47,28 +47,28 @@ public class GameInput : MonoBehaviour
 
     private void OnDestroy()
     {
-        m_PlayerControls.ActionMap.EastButton.performed -= EastButton_performed;
-        m_PlayerControls.ActionMap.SouthButton.performed -= SouthButton_performed;
-        m_PlayerControls.ActionMap.NorthButton.performed -= NorthButton_performed;
-        m_PlayerControls.ActionMap.RightStickPress.performed -= RightStickPress_performed;
+        m_PlayerControls.ActionMap.Hyperspeed.performed -= Hyperspeed_performed;
+        m_PlayerControls.ActionMap.Burst.performed -= Burst_performed;
+        m_PlayerControls.ActionMap.CameraModeToggle.performed -= CameraModeToggle_performed;
+        m_PlayerControls.ActionMap.CameraYOffsetToggle.performed -= CameraYOffsetToggle_performed;
     }
 
-    private void EastButton_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    private void Hyperspeed_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         OnHyperSpeedPerformed?.Invoke();
     }
 
-    private void SouthButton_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    private void Burst_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         OnBurstPerformed?.Invoke();
     }
 
-    private void NorthButton_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    private void CameraModeToggle_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         OnCameraLockToggle?.Invoke();
     }
 
-    private void RightStickPress_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+    private void CameraYOffsetToggle_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         OnCameraYOffsetToggle?.Invoke();
     }

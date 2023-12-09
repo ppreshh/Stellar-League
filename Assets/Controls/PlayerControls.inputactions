@@ -6,7 +6,7 @@
             "id": "57daa782-9967-48ed-b10e-e3a5b823ebe2",
             "actions": [
                 {
-                    "name": "LeftJoystick",
+                    "name": "Movement",
                     "type": "Value",
                     "id": "9b3d98bb-f513-4242-aa94-6f024e484fda",
                     "expectedControlType": "Vector2",
@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "LeftShoulder",
+                    "name": "AirRollToggle",
                     "type": "Value",
                     "id": "5c87bfe5-fc58-492a-8cab-3250d4173e02",
                     "expectedControlType": "",
@@ -24,7 +24,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "RighTrigger",
+                    "name": "Booster",
                     "type": "Value",
                     "id": "0042d3a2-224b-412c-a643-892bc30fbc97",
                     "expectedControlType": "Button",
@@ -33,7 +33,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "LeftTrigger",
+                    "name": "Reverse",
                     "type": "Button",
                     "id": "d182d8fa-d960-4a6f-897e-d5ca81398cef",
                     "expectedControlType": "Button",
@@ -42,7 +42,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "EastButton",
+                    "name": "Hyperspeed",
                     "type": "Button",
                     "id": "e87efe15-cde5-42cd-a111-d6f9afb66bec",
                     "expectedControlType": "Button",
@@ -51,7 +51,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "SouthButton",
+                    "name": "Burst",
                     "type": "Button",
                     "id": "24fe9ec1-54f4-4997-afbf-724c20fb772c",
                     "expectedControlType": "Button",
@@ -69,7 +69,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "NorthButton",
+                    "name": "CameraModeToggle",
                     "type": "Button",
                     "id": "62b1c315-927b-4f6b-9117-49ce58a014b9",
                     "expectedControlType": "Button",
@@ -78,7 +78,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "RightStickPress",
+                    "name": "CameraYOffsetToggle",
                     "type": "Button",
                     "id": "2f674af5-cc56-4bf9-a370-48a5af081dd5",
                     "expectedControlType": "Button",
@@ -95,7 +95,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LeftJoystick",
+                    "action": "Movement",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -106,7 +106,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LeftJoystick",
+                    "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -117,7 +117,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LeftJoystick",
+                    "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -128,7 +128,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LeftJoystick",
+                    "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -139,7 +139,62 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LeftJoystick",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "WASD",
+                    "id": "5c942733-04be-4926-b732-559a1e82d52f",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "af75637b-ac59-43d5-aed6-67d7f487be9b",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "aac75647-621e-45cf-a760-bad8062ea048",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "04f324da-164c-4407-9710-0378d39e5546",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "1534dffd-f036-4eee-b9e3-b9cdfa1fb7ff",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -150,7 +205,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LeftShoulder",
+                    "action": "AirRollToggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "05364567-7f25-4ada-81fc-c0aed2fe4cec",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AirRollToggle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -161,7 +227,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "RighTrigger",
+                    "action": "Booster",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6dc4f1ef-71a8-484e-aeb4-7193cc682ccd",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Booster",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -172,7 +249,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "LeftTrigger",
+                    "action": "Reverse",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3eeeb584-70fa-46b7-aa6b-f56f5450f8c6",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reverse",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -183,7 +271,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "EastButton",
+                    "action": "Hyperspeed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6bb4d304-1ed6-466e-8e13-25761d9a913c",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Hyperspeed",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -194,7 +293,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "SouthButton",
+                    "action": "Burst",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b7a47cd4-c18d-4687-8bd0-187d46758ad6",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Burst",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -260,7 +370,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "NorthButton",
+                    "action": "CameraModeToggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "60bfb40f-76ee-40f0-9dd4-3350cbb8dd23",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraModeToggle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -271,7 +392,18 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "RightStickPress",
+                    "action": "CameraYOffsetToggle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2a779d65-a65e-4cc4-b849-c02dbbb39744",
+                    "path": "<Keyboard>/v",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraYOffsetToggle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
